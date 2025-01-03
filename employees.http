@@ -5,13 +5,21 @@
 GET {{host}}
 
 ### Get all employees
-GET {{host}}/employees
+GET {{host}}/api/employees
 
 ### Get specific employee
-GET {{host}}/employees/2
+GET {{host}}/api/employees/2
 
 ### Get nonexistent employee
-GET {{host}}/employees/123
+GET {{host}}/api/employees/123
 
 ### Get random employee
-GET {{host}}/employees/random
+GET {{host}}/api/employees/random
+
+### Post new employee
+POST {{host}}/api/employees
+Content-Type: application/json
+
+{
+    "name": "New Guy"
+}
